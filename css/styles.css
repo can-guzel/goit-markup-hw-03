@@ -103,6 +103,11 @@ ul {
   line-height: 1.5;
 }
 
+.portfolio-section img {
+  width: 360px;
+  height: 300px;
+}
+
 .portfolio-section li {
   border-width: 0px, 1px, 1px, 1px;
   border-style: solid;
