@@ -48,7 +48,8 @@ body {
 }
 
 .nav-contact:hover,
-.nav-contact:active {
+.nav-contact:active,
+.nav-contact:focus {
   color: #404bbf;
 }
 
