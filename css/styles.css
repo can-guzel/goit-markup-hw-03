@@ -47,7 +47,8 @@ body {
   letter-spacing: 0.02em;
 }
 
-.nav-contact:hover {
+.nav-contact:hover,
+.nav-contact:active {
   color: #404bbf;
 }
 
