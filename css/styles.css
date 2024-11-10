@@ -1,0 +1,118 @@
+body {
+  font-family: "Roboto", serif;
+  color: #434455;
+  background-color: #ffffff;
+}
+.navbar {
+  border-bottom: 1px solid rgba(231, 233, 252, 1);
+}
+.logo {
+  color: #4d5ae5;
+  font-family: "Raleway", serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3%;
+  line-height: 1.17;
+}
+
+.logo .logo-span1 {
+  color: #2e2f42;
+}
+.logo .logo-span2 {
+  color: #f4f4fd;
+}
+
+.navbar-links {
+  color: #2e2f42;
+  list-style-type: none;
+  font-weight: 500;
+  text-decoration: none;
+  line-height: 1.5;
+  letter-spacing: 2%;
+}
+
+.navbar-links:hover {
+  color: #404bbf;
+}
+.contact {
+  list-style-type: none;
+}
+.contact:hover {
+  color: #404bbf;
+}
+
+.first-section {
+  color: #ffffff;
+  background-color: #2e2f42;
+  text-align: center;
+}
+
+.main-title {
+  font-size: 56px;
+  letter-spacing: 2%;
+  line-height: 1.07;
+  text-align: center;
+}
+.order-button {
+  color: #ffffff;
+  letter-spacing: 4%;
+  line-height: 1.5;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.order-button:hover {
+  background-color: #404bbf;
+}
+
+ul {
+  list-style-type: none;
+}
+.mission-section h3 {
+  color: #2e2f42;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 2%;
+}
+
+.mission-section p {
+  line-height: 1.5;
+  letter-spacing: 2%;
+}
+
+.team-section {
+  background-color: #f4f4fd;
+  text-align: center;
+}
+
+.team-section li {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-section {
+  text-align: center;
+}
+
+.portfolio-section h2 {
+  font-size: 36px;
+  line-height: 1.5;
+}
+
+.portfolio-section li {
+  border-width: 0px, 1px, 1px, 1px;
+  border-style: solid;
+  border-color: rgba(231, 233, 252, 1);
+}
+
+.footer {
+  background-color: #2e2f42;
+  text-decoration: none;
+}
+.footer p {
+  color: #f4f4fd;
+}
