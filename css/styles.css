@@ -6,7 +6,7 @@ body {
 
 .logo {
   color: #4d5ae5;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   text-decoration: none;
@@ -39,7 +39,7 @@ body {
 .nav-address {
   font-style: normal;
 }
-.contact {
+.nav-contact {
   color: #434455;
   list-style-type: none;
   font-size: 16px;
@@ -47,7 +47,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-.contact:hover {
+.nav-contact:hover {
   color: #404bbf;
 }
 
