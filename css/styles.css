@@ -1,7 +1,64 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 1158px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 0px 156px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  gap: 76px;
+  align-items: center;
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  list-style-type: none;
 }
 
 .logo {
@@ -13,6 +70,7 @@ body {
   letter-spacing: 0.03em;
   line-height: 1.17;
   font-weight: 700;
+  margin: 24px 0;
 }
 
 .logo .logo-span {
@@ -39,9 +97,19 @@ body {
 .nav-address {
   font-style: normal;
 }
+
+.address-items {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 24px 0;
+  gap: 40px;
+}
+
 .nav-contact {
   color: #434455;
   list-style-type: none;
+  text-decoration: none;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -56,9 +124,15 @@ body {
 .first-section {
   color: #ffffff;
   background-color: #2e2f42;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-title {
+  max-width: 496px;
+  margin-top: 188px;
+  margin-bottom: 48px;
   text-align: center;
   font-size: 56px;
   letter-spacing: 0.02em;
@@ -69,7 +143,12 @@ body {
   letter-spacing: 0.04em;
   line-height: 1.5;
   background-color: #4d5ae5;
+  box-shadow: 0px 4px 4px 0px #00000026;
+  border: 0px;
+  border-radius: 4px;
   font-weight: 500;
+  margin-bottom: 188px;
+  padding: 16px 32px;
 }
 
 .order-button:hover,
@@ -78,9 +157,16 @@ body {
   cursor: pointer;
 }
 
-ul {
-  list-style-type: none;
+.visually-hidden {
+  visibility: hidden;
+  overflow: hidden;
 }
+
+.ms-li {
+  width: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
+}
+
 .mission-title {
   color: #2e2f42;
   font-weight: 500;
@@ -94,8 +180,23 @@ ul {
   letter-spacing: 0.02em;
 }
 
+.mission-list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  list-style-type: none;
+}
+
+.mission-list li {
+  margin: 120px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .team-section {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 
 .team-title {
@@ -106,10 +207,24 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .team-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.team-card {
   background-color: #ffffff;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .tl-title {
@@ -118,13 +233,27 @@ ul {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 .tl-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 32px;
+}
+
+.portfolio-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .portfolio-title {
@@ -134,6 +263,11 @@ ul {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.pl-item {
+  border: 1px solid #e7e9fc;
 }
 
 .pl-title {
@@ -142,20 +276,33 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  margin-left: 16px;
 }
 
 .pl-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 32px;
+  margin-left: 16px;
+}
+
+.pl-item img {
+  height: 300px;
 }
 
 .footer {
   background-color: #2e2f42;
   text-decoration: none;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-text {
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  max-width: 264px;
+  margin-top: 16px;
 }
