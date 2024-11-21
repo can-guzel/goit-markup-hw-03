@@ -36,16 +36,16 @@ img {
   padding: 0 15px;
 }
 
-.section {
-  padding: 0px 156px;
-}
-
 header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
   border-bottom: 1px solid #e7e9fc;
+}
+
+.header-section {
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .navbar {
@@ -125,10 +125,9 @@ header {
 
 .first-section {
   color: #ffffff;
-  background-color: #2e2f42;
-  display: flex;
   flex-direction: column;
-  align-items: center;
+  background-color: #2e2f42;
+  padding: 188px 0;
 }
 
 .main-title {
@@ -151,12 +150,19 @@ header {
   font-weight: 500;
   margin-bottom: 188px;
   padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  cursor: pointer;
 }
 
 .order-button:hover,
 .order-button:focus {
   background-color: #404bbf;
   cursor: pointer;
+}
+
+.mission-section {
+  padding: 120px 0;
 }
 
 .visually-hidden {
@@ -175,6 +181,7 @@ header {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .mission-text {
