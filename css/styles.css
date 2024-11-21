@@ -30,8 +30,8 @@ img {
 }
 
 .container {
-  width: ;
-  :1158px ;
+  display: flex;
+  width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
