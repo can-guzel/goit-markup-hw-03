@@ -30,10 +30,10 @@ img {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 1158px;
+  width: ;
+  :1158px ;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .section {
@@ -45,6 +45,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .navbar {
@@ -70,7 +71,7 @@ header {
   letter-spacing: 0.03em;
   line-height: 1.17;
   font-weight: 700;
-  margin: 24px 0;
+  margin-right: 76px;
 }
 
 .logo .logo-span {
@@ -87,6 +88,7 @@ header {
   text-decoration: none;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 
 .studio:hover,
